@@ -1,0 +1,52 @@
+{
+  "id": "farrasjibran.kanban",
+  "name": "Kanban",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "description": "A task board: add tasks and drag them between To Do, In Progress, and Done.",
+  "author": "farrasjibran",
+  "entry": "index.js",
+  "icon": {
+    "type": "builtin",
+    "name": "board"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "id": "farrasjibran.kanban.open",
+        "title": "Kanban: Open the board"
+      }
+    ],
+    "sidebar": [
+      {
+        "id": "farrasjibran.kanban.sidebar",
+        "title": "Kanban",
+        "icon": {
+          "type": "builtin",
+          "name": "board"
+        },
+        "command": "farrasjibran.kanban.open"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "farrasjibran.kanban.tab",
+        "title": "Kanban",
+        "icon": {
+          "type": "builtin",
+          "name": "board"
+        }
+      }
+    ],
+    "services": [
+      {
+        "id": "farrasjibran.kanban.boot",
+        "title": "Load the plugin at startup"
+      }
+    ]
+  }
+}
+
