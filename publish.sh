@@ -106,7 +106,8 @@ Published $VERSION.
     (.zip), or point the folder option at farrasjibran.kanban/
   - a published version is immutable once a digest covers it; re-uploading the
     same version makes every install of it fail, so cut a new version instead
-  - to appear in Browse marketplace…, mirror the repo on GitHub with the
-    bentomux-plugin topic and a release carrying this zip
+  - the marketplace caches for six hours; its Refresh re-sweeps immediately
+  - on GitHub the repo needs the bentomux-plugin topic, or Browse will not
+    list it:  gh repo edit --add-topic bentomux-plugin
 TIP
 
